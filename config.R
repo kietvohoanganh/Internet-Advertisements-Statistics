@@ -1,0 +1,20 @@
+config <- list(
+  seed = 2026L,
+  train_fraction = 0.80,
+  threshold = 0.50,
+  cv_folds = 5L,
+  run_lasso = TRUE,
+  run_correction = TRUE,
+  bootstrap_reps = 500L,
+  run_benchmark = TRUE,
+  benchmark_folds = 5L,
+  inner_folds = 3L,
+  min_precision = .90,
+  selection_objective = "f2_precision",
+  glmnet_maxit = 100000L,
+  glmnet_tolerance = 1e-7,
+  rf_trees = c(128L, 256L),
+  benchmark_jobs = 2L,
+  outlier_sensitivity = TRUE,
+  correction_min_gain = .005
+)

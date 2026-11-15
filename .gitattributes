@@ -1,0 +1,8 @@
+# Keep source/checksum inputs stable across checkouts.
+* text=auto eol=lf
+*.png binary
+*.rds binary
+*.joblib binary
+
+# Keep the generated renv bootstrap unchanged.
+renv/activate.R linguist-generated=true -whitespace

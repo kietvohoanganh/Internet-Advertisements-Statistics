@@ -1,0 +1,30 @@
+kind,variable,method,estimate,estimate_type,ci_low,ci_high,p_value,p_adjusted,effect_size,effect_size_type,n_ad,n_nonad,n,note
+dataset,rows,,3279,count,,,,,,,,,,
+dataset,predictors,,1558,count,,,,,,,,,,
+dataset,duplicate_rows,,856,count,,,,,,,,,,
+dataset,unique_rows,,2423,count,,,,,,,,,,
+dataset,conflicting_label_groups,,3,count,,,,,,,,,,
+dataset,rows_missing_geometry,,910,count,,,,,,,,,,
+dataset,ad,,459,count,,,,,,,,,,
+dataset,nonad,,2820,count,,,,,,,,,,
+primary_test,height,Welch t-test,-1.63902034039029,ad minus nonad mean,-6.39363371163441,3.11559303085383,0.498811321353789,0.498811321353789,-0.0290482841640576,Cohen d,330,1606,,BH family: four primary tests; individual mean CIs are unadjusted
+primary_test,width,Welch t-test,201.315584415584,ad minus nonad mean,183.145161421073,219.486007410095,5.08181646565602e-68,2.03272658626241e-67,1.978143391293,Cohen d,330,1610,,BH family: four primary tests; individual mean CIs are unadjusted
+primary_test,aratio,Welch t-test,2.38400142392066,ad minus nonad mean,1.9871112732298,2.78089157461152,3.04265902109696e-29,6.08531804219391e-29,0.560710034742098,Cohen d,330,1601,,BH family: four primary tests; individual mean CIs are unadjusted
+primary_test,local,Pearson chi-square,0.0502636247315138,phi,,,0.013566056098408,0.0180880747978774,,,384,2028,,BH family: four primary tests; individual mean CIs are unadjusted
+logistic_effect,height,Geometry logistic; Wald interval,0.475979372400489,conditional odds ratio,0.361628813900615,0.626488692942004,1.18530408123262e-07,,,,308,1630,1938,One training SD for geometry; 0-to-1 for local. Unstable estimates omitted.
+logistic_effect,width,Geometry logistic; Wald interval,6.32227791107872,conditional odds ratio,4.84000645888178,8.25850095955216,1.0612516886126e-41,,,,308,1630,1938,One training SD for geometry; 0-to-1 for local. Unstable estimates omitted.
+logistic_effect,aratio,Geometry logistic; Wald interval,0.352012798139259,conditional odds ratio,0.222612935494135,0.556629873186751,7.97721272014073e-06,,,,308,1630,1938,One training SD for geometry; 0-to-1 for local. Unstable estimates omitted.
+logistic_effect,local,Geometry logistic; Wald interval,1.59484373915302,conditional odds ratio,1.10309518511443,2.30580877030274,0.0130786413996623,,,,308,1630,1938,One training SD for geometry; 0-to-1 for local. Unstable estimates omitted.
+missingness_test,height,Pearson chi-square,0.0607359094067243,phi,,,0.00279285333521184,0.0036099374592283,,,,,2423,Missing indicator vs class; separate exploratory BH family of three tests
+missingness_test,width,Pearson chi-square,0.0591251763922084,phi,,,0.0036099374592283,0.0036099374592283,,,,,2423,Missing indicator vs class; separate exploratory BH family of three tests
+missingness_test,aratio,Pearson chi-square,0.0627377149102897,phi,,,0.00201372970385725,0.0036099374592283,,,,,2423,Missing indicator vs class; separate exploratory BH family of three tests
+provenance,source_md5,,,,,,,,,,,,,889d28cc6f87a6f5a8c18f26b7b0c616
+provenance,config_md5,,,,,,,,,,,,,4eabcd8e1b13ed24055bdf0dbd7966a5
+provenance,analysis_signature,,,,,,,,,,,,,ce5418eea0680a536f24512054bba1b8f139ad8bb61d1e23de5d5a347cda2e8d
+provenance,settings,,,,,,,,,,,,,"{""correction_min_gain"": 0.005, ""inner_folds"": 3, ""jobs"": 2, ""min_precision"": 0.9, ""objective"": ""f2_precision"", ""outer_folds"": 5, ""reps"": 500, ""rf_trees"": [128, 256], ""seed"": 2026}"
+provenance,python_versions,,,,,,,,,,,,,"{""cloudpickle"": ""3.1.2"", ""joblib"": ""1.6.0"", ""numpy"": ""2.4.6"", ""scikit-learn"": ""1.7.2"", ""scipy"": ""1.17.1"", ""threadpoolctl"": ""3.8.0""}"
+provenance,r_versions,,,,,,,,,,,,,"{""R"": ""R version 4.6.2 (2026-10-29)"", ""ggplot2"": ""4.0.4"", ""glmnet"": ""5.2"", ""jsonlite"": ""2.0.0""}"
+provenance,figure:class_distribution.png,,,,,,,,,,,,,deb9296b38d396db7fa9e005645b30e3c0e0a29ff5dd4b9ba3e7300c111d5e16
+provenance,figure:model_comparison.png,,,,,,,,,,,,,4ab6c2db64e537ba6c24cbd0d6229a0f09988722089881f1cb1ceab96a5af663
+provenance,figure:confusion_matrix.png,,,,,,,,,,,,,e6df383453f0cc95f1b587e8b5e1ecf53fd146a641f2af2fcb29be0302ac25ad
+provenance,figure:precision_recall.png,,,,,,,,,,,,,69a7f580e325347d001936172fec01f20101c3cb7ee89de0053bda127cbdc217

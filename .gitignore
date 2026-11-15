@@ -1,0 +1,35 @@
+# Local environments and editors
+.venv/
+venv/
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.env
+.env.*
+renv/library/
+renv/staging/
+
+# Private/generated data; retain only the empty-directory placeholders
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Intermediate results, trained artifacts and old distributions
+outputs/
+dist/
+.publish-*/
+*.rds
+*.joblib
+
+# Caches and operating-system metadata
+__pycache__/
+*.py[cod]
+__MACOSX/
+.DS_Store
+.pytest_cache/
+*.swp
+*.tmp
+*.log
